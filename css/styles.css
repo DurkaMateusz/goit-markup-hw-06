@@ -46,6 +46,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar .contact {
@@ -151,6 +153,8 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address .link:hover,
 .address .link:focus,
@@ -252,6 +256,8 @@ header {
   display: inline-flex;
   fill: #757575;
   cursor: pointer;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-envelope:hover,
@@ -415,6 +421,8 @@ figcaption {
   padding: 6px 22px;
   border-radius: 4px;
   background: #f5f4fa;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn_menu:focus,
 .btn_menu:hover,
@@ -459,6 +467,8 @@ figcaption {
   top: 0;
   left: 0;
   cursor: pointer;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card:hover,
@@ -492,6 +502,8 @@ figure {
   padding: 12px;
   fill: #afb1b8;
   cursor: pointer;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons_person {
@@ -501,6 +513,7 @@ figure {
   width: 100%;
   gap: 34px;
 }
+
 .icons-list {
   display: flex;
   align-items: baseline;
@@ -553,6 +566,8 @@ figure {
   border-radius: 30%;
   padding: 12px;
   cursor: pointer;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-joinus:hover {
@@ -580,6 +595,8 @@ figure {
   border: 1px solid #afb1b8;
   fill: #afb1b8;
   cursor: pointer;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-customer:hover {
@@ -636,6 +653,11 @@ figure {
   text-transform: uppercase;
 }
 
+.animation-cover {
+  overflow: hidden;
+  position: relative;
+}
+
 .cover {
   position: absolute;
   top: 0;
@@ -643,14 +665,13 @@ figure {
   width: 100%;
   height: 294px;
   background: rgba(33, 150, 243, 0.9);
-
   transform: translatey(100%);
   transition: transform 250ms ease-in-out;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   visibility: hidden;
 }
 
-.portfolio-card:hover .cover {
+.animation-cover:hover .cover {
   transform: translatey(0);
   height: 294px;
   visibility: visible;
@@ -675,6 +696,8 @@ figure {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -697,6 +720,9 @@ figure {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  padding: 6px;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -751,6 +777,8 @@ figure {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.96px;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .newsletter-btn:hover,
 .newsletter-btn:focus,
@@ -800,10 +828,12 @@ figure {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
+  position: relative;
 }
 
 .modalform textarea {
   height: 120px;
+  width: 448px;
   padding: 16px 12px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -823,6 +853,8 @@ figure {
   margin: 0 auto;
   color: #ffffff;
   background: #2196f3;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title_form {
@@ -834,4 +866,99 @@ figure {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
+}
+
+.user_namesvg {
+  position: absolute;
+  top: 104px;
+  left: 52px;
+}
+
+.user_phonesvg {
+  position: absolute;
+  top: 172px;
+  left: 52px;
+}
+
+.user_emailsvg {
+  position: absolute;
+  top: 240px;
+  left: 52px;
+}
+
+.modal_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 16px;
+  height: 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-bottom: 30px;
+  visibility: hidden;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-modal-none {
+  width: 16px;
+  height: 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 2px;
+  position: absolute;
+  top: 442px;
+  left: 54px;
+  visibility: visible;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-modal-yes {
+  fill: #ffffff;
+  background-color: #2196f3;
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
+  position: absolute;
+  top: 442px;
+  left: 54px;
+  visibility: hidden;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox:checked + .checkbox-modal-yes {
+  visibility: visible;
+}
+.modal-checkbox:checked + .checkbox-modal-none {
+  visibility: hidden;
+}
+.modal-rules {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  position: absolute;
+  top: 437px;
+  left: 77px;
+  transition: all 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-rules a {
+  text-decoration: underline;
+}
+
+input:focus,
+input:hover,
+.form-input:hover,
+.form-input:focus {
+  border-color: #2196f3;
+}
+.form-input:focus-within + .icons-form,
+.form-input:hover + .icons-form {
+  fill: #2196f3;
+}
+
+.close-btn-form {
+  display: flex;
 }

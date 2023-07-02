@@ -423,23 +423,45 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal><div class="modal">
-      <button type="button" class="close-btn" data-modal-close>X</button>
+      <button type="button" class="close-btn" data-modal-close><svg width="16" height="15" class="close-btn-form">
+        <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+      </svg></button>
       
       <div class="modalform"><form name="form-modal">
         <p class="title_form">Zostaw swoje dane w formularzu poniżej</p>
         <label for="name">Imię</label>
-        <input id="name" name="user_name" type="text" required />
-        <svg width="18px" height="18px" class="icon-joinus">
-          <use href="images/icons.svg#icon-linkedin-1"></use>
+        <input id="name" name="user_name" type="text" required class="form-input" />
+        <svg width="18px" height="18px" class="user_namesvg icons-form">
+          <use href="images/icons.svg#icon-person-black-18dp-1"></use>
         </svg>
         <label for="phone">Telefon</label>
-        <input id="phone" name="phone_no" type="tel" required />
+        <input id="phone" name="phone_no" type="tel" required class="form-input" />
+        <svg width="18px" height="18px" class="user_phonesvg icons-form">
+          <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
+        </svg>
         <label for="email2">Email</label>
-        <input id="email2" name="user_email" type="email" required />
+        <input id="email2" name="user_email" type="email" required class="form-input" />
+        <svg width="18px" height="18px" class="user_emailsvg icons-form">
+          <use href="images/icons.svg#icon-email-black-18dp-1"></use>
+        </svg>
         <label for="user_text">Komentarz</label>
-        <textarea name="user_text" rows="5" placeholder="Wprowadź tekst"></textarea>
+        <textarea name="user_text" rows="5" placeholder="Wprowadź tekst" class="form-input"></textarea>
         <label for="checkbox"></label>
-        <input id="checkbox" name="checkbox" type="checkbox" required />
+        <input id="checkbox" name="checkbox" type="checkbox" class="modal_checkbox form-input" required />
+        <div class="checkbox-modal-none">
+          <svg width="16" height="15" class="icons-form">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </div>
+        <div class="checkbox-modal-yes">
+          <svg width="16" height="15" class="icons-form">
+            <use href="./images/icons.svg#icon-icon-check"></use>
+          </svg>
+        </div>
+        <span class="modal-rules"
+          >Oświadczam iż akceptuję
+          <a class="rules-link" href="#">Regulamin</a> i
+          <a class="rules-link" href="#">Politykę Prywatności</a>.</span>
         <button type="submit" class="sendmodal_btn">wyślij</button>
 
       </form></div>
