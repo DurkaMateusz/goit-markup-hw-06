@@ -410,11 +410,39 @@
               </li>
             </ul>
           </li>
-        </ul>
+          </ul>
+        <div class="newsletter"><p class="title-newsletter">zapisz się do newslettera</p>
+          <form name="signup_form" autocomplete="on" novalidate>
+            <label for="user_email"></label>
+            <input id="user-email" name="email" type="email" placeholder="E-mail" required />
+            <button type="submit" class="newsletter-btn">Zapisz się <svg width="24px" height="24px" class="newsletter-icon"><use href="images/icons.svg#icon-icon-send"></use></svg></button>
+            
+          </form>
+          
+          </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal><div class="modal">
       <button type="button" class="close-btn" data-modal-close>X</button>
+      
+      <div class="modalform"><form name="form-modal">
+        <p class="title_form">Zostaw swoje dane w formularzu poniżej</p>
+        <label for="name">Imię</label>
+        <input id="name" name="user_name" type="text" required />
+        <svg width="18px" height="18px" class="icon-joinus">
+          <use href="images/icons.svg#icon-linkedin-1"></use>
+        </svg>
+        <label for="phone">Telefon</label>
+        <input id="phone" name="phone_no" type="tel" required />
+        <label for="email2">Email</label>
+        <input id="email2" name="user_email" type="email" required />
+        <label for="user_text">Komentarz</label>
+        <textarea name="user_text" rows="5" placeholder="Wprowadź tekst"></textarea>
+        <label for="checkbox"></label>
+        <input id="checkbox" name="checkbox" type="checkbox" required />
+        <button type="submit" class="sendmodal_btn">wyślij</button>
+
+      </form></div>
     </div></div>
       <script src="./js/modal.js"></script>
   </body>
